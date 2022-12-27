@@ -1,0 +1,150 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(241,242,246,255);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box-text h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(18,121,237,255);
+    font-size: 90px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.box-text h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    padding-right: 30px;
+}
+
+.box-login {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px black;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.input, .button {
+    width: 100%;
+}
+.input input{
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 12px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+    margin-bottom: 10px;
+    background-color: rgba(18,121,237,255);;
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 12px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#button-senha-nova {
+    background-color: rgba(63,185,34,255);
+    margin-top: 12px;
+}
+
+.forgot {
+    width: 100%;
+    padding: 12px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(18,121,237,255);
+}
+
+.create-pag {
+    width: 70%;
+    margin: 30px 0px;
+    font-size: 18px;
+}
+
+span {
+    font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .box-text {
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-text h2 {
+        text-align: center;
+        padding-right: 0px;
+    }
+    .box-login {
+        width: 80vw;
+    }
+    .box-text h1 {
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 70px;
+        justify-content: flex-end;
+        box-sizing: border-box;
+    }
+    .box-text h2 {
+        font-size: 26px;
+        box-sizing: border-box;
+    }
+    .box-text h1, .box-text h2 {
+        display: flex;
+        align-items: center;
+    }
+}
